@@ -1,0 +1,113 @@
+/*Rob Tennant - sustainability website */
+/* global backgrounds, colors and widths */
+* {box-sizing: border-box;}
+body {font-size: 16px;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: none;
+}
+
+header, nav ul, #content-wrapper {width: 90%;
+    max-width: 1200px;
+    right: auto;
+    left: auto;
+}
+
+a {color: #008000;}
+
+/* Logo */
+header img {position:absolute; top: 0; left: 0;}
+
+header {position: relative;}
+
+header h1, nav ul {padding-left: 50px;}
+
+/* Nav */
+nav {background-color: #008000;}
+
+nav ul li {list-style-type: none;}
+
+nav ul li {display: inline-block;}
+
+nav ul li a {display: inline-block;
+    padding: 1rem; 
+    text-decoration: none; 
+    color: #FFFFFF; 
+    font-weight: bold;
+}
+
+a:hover {background-color: #000000; color: #9ae39a;}
+
+/* home page main img */
+main article img {border: double 3px #333333; 
+    float: left; 
+    margin-top: .5rem; 
+    margin-right: 1rem; 
+    margin-bottom: .5rem;
+}
+
+/* home page bottom columns */
+main section {display: flex;}
+
+main section div {background-color: #e7ffe7;
+    border: solid 1px #008000;
+    border-radius: 10px;
+    width: auto;
+    margin-right: 1rem;
+    align-content: center;
+}
+
+main section div:last-child {margin-right: none;}
+
+main section div h2 {background-color: #008000;
+    color: white;
+    margin-top: none;}
+
+main section div{border-radius: 10 10 0 0;}
+
+main section div img{border: double 3px #333333;
+    display: block;
+    margin: auto;}
+
+    /* sidebar */
+aside section {
+  background-color: white;
+  margin-bottom: 1rem;
+  border: 1px solid #008000;
+}
+
+aside h3 {
+  background-color: #008000;
+  color: white;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+aside a {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+/* home page columns */
+#content-wrapper {
+  display: flex;
+}
+
+#content-wrapper > aside {
+  background-color: #ccc;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  position: relative;
+  top: 20px;         
+  order: 1;            
+  flex: 1;             
+}
+
+main > aside h2 {
+  margin-top: 0;
+  white-space: nowrap;
+}
+#content-wrapper > main {
+  order: 2;    
+  flex: 4;     
+}
